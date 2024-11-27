@@ -15,7 +15,7 @@ def reverse(word):
 
 while True:
     user_input = input('Enter a word : ')
-    if user_input.isalpha():
+    if user_input.replace(" ", "").isalpha():       # Allows alphabetic characters and spaces
         print(f'The reversed string is : ', reverse(user_input))
         break
     else:
