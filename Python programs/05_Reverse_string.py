@@ -20,3 +20,14 @@ while True:
         break
     else:
         print("Invalid input. Please enter letters only (no numbers or special characters).")
+
+
+print('')
+
+print('Another simple method')
+
+def reverse(word):
+    return ''.join(reversed(word))
+
+user_input = input('Enter a word : ')
+print(f'the reversed word is : ', reverse(user_input))
